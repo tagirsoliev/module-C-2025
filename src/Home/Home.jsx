@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom"
-import Registration from "../Registration/Registration"
 function Home() {
 
     return (
         <div>
-            <Link to={Registration}>Регистрация</Link >
+            <Link to="/registration">Регистрация</Link >
+            <Link to="/auth">Авторизация</Link >
         </div>
     )
 }
