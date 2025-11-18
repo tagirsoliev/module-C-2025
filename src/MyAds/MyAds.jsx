@@ -5,7 +5,7 @@ const MyAds = () => {
     const navigate = useNavigate()
     const [ads, setAds] = useState([])
     useEffect(() => {
-        const adstemp = JSON.parse(localStorage.getItem('myAds')) || []
+        const adstemp = JSON.parse(localStorage.getItem('ads')) || []
         setAds(adstemp)
     }, [])
     const changeAd = (id) => {

@@ -1,8 +1,12 @@
-import { useState } from "react"
+import { use, useState } from "react"
+import { useLocation } from "react-router-dom"
 
-const Ad = ({ ad }) => {
+const Ad = () => {
     const [isHiden, setIsHiden] = useState(true)
+    const location = useLocation()
+    const ad = location.state.ad
     return (
+        // <div></div>
         <div key={ad.id}>
             <h2>{ad.title}</h2>
             <p>{ad.description}</p>

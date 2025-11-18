@@ -6,7 +6,7 @@ import Ads from "./Ads/Ads"
 import ChangeAd from "./ChangeAd/ChangeAd"
 import CreateAd from "./CreateAd/CreateAd"
 import Ad from "./Ad/Ad"
-// import MyAds from "./MyAds/MyAds"
+import MyAds from "./MyAds/MyAds"
 
 function App() {
 
@@ -17,7 +17,7 @@ function App() {
         <Route path="/auth" element={<Authorization />} />
         <Route path="/" element={<Home />} />
         <Route path="/ads" element={<Ads />} />
-        {/* <Route path="/myads" element={<MyAds />} /> */}
+        <Route path="/myads" element={<MyAds />} />
         <Route path="/changead/:id" element={<ChangeAd />} />
         <Route path="/createad" element={<CreateAd />} />
         <Route path="/ads/:id" element={<Ad />} />
